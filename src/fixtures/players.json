@@ -1,0 +1,14 @@
+[
+    { 
+        "name" : "Anthony Davis",
+        "team" : "Pelicans"
+    },
+    { 
+        "name" : "Kevin Love",
+        "team" : "Cleveland"
+    },
+    { 
+        "name" : "CJ McCollum",
+        "team" : "Portland"
+    }
+]
