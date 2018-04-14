@@ -1,11 +1,19 @@
-angular.module('myApp')
-.service('playerService',[
-    '$http',
-    function($http){
+(function(){
+
+    'use strict';
+
+    angular.module('myApp')
+    .service('playerService', playerService);
+
+    playerService.$inject = ['$http'];
+
+    function playerService($http){
 
         var service = {};
 
-        service.getPlayers = function(param) {
+        service.getPlayers = getPlayers;
+
+        function getPlayers(param) {
 
             return $http({
                 method : "GET",
@@ -14,5 +22,5 @@ angular.module('myApp')
         }
 
         return service;
-    }
-]);
+    }    
+})();
